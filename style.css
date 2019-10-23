@@ -1,0 +1,88 @@
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    padding: 0;
+}
+
+/* DEBUT HEADER */
+
+header{
+    background-image: url(images/header.png);
+}
+
+h1{
+    font-family: 'Oswald';
+}
+
+nav{
+    font-family: 'Abel';
+    background-image: linear-gradient(to top, rgb(0, 162, 255), rgb(22, 137, 190)) ;
+}
+
+/* FIN HEADER */
+/* DEBUT MAIN */
+
+main, .sect1_art, .img_header, .sect3_art{
+    background-image: url(images/fond.png);
+}
+
+.sect2_art, footer{
+    background-image: url(images/fond-article.png);
+}
+
+.btn-color{
+    background-image: linear-gradient(to top, red, orange);
+    color: white;
+}
+
+/* FIN MAIN */
+/* DEBUT FOOTER */
+.bg-footer{
+    background-image: url(images/footer.png);
+}
+/* FIN FOOTER */
+.speech-bubble {
+    position: relative;
+    background-image: url(images/fond.png);
+    border-radius: .4em;
+}
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-top-color: rgba(255, 255, 255, 0.897);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -15px;
+    margin-bottom: -25px;
+}
+
+@media screen and ( min-width: 1024px){
+    header{
+        padding: 3rem;
+    }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px){
+    header{
+        padding: 1rem;
+    }
+    nav{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding-bottom: 1rem;
+    }
+
+
+}
