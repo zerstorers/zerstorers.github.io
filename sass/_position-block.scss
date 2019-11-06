@@ -1,0 +1,78 @@
+// Mixin
+
+@mixin large_logo {
+    color: pink;
+    font-size: 60px;
+}
+
+// Global
+main, nav{
+    width: 85%;
+    margin: auto;
+}
+
+// Articles left and right
+.block{
+    margin: 1em 0;
+}
+
+main{
+    div{
+        div{
+            div{
+                div{
+                    div{
+                        div{
+                            div:nth-child(1){
+                                a{
+                                    text-decoration: none;
+                                    color: black;
+                                    &:hover{
+                                        color: green;
+                                    }
+
+                                }
+                    
+                            }
+
+                            div:nth-child(2){
+                                a{
+                                    text-decoration: none;
+                                    color: black;
+                                    &:hover{
+                                        color: red;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.photo_dave{
+    @include large_logo;
+    position: absolute;
+    top: 38%;
+    left: 43%;
+}
+
+.logo_about{
+    margin-right: 3rem;
+}
+
+// Artciles center
+.main{
+    margin-top: 1em;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+.input-group{
+    padding: 1.2rem;
+    border-bottom: 1px solid lightgray;
+}
+
