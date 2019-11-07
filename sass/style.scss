@@ -1,7 +1,7 @@
 @import "color";
 @import "font";
 @import "header";
-@import "position-block"
+@import "position-block";
 
 .left a{
     @include a(rgb(0, 119, 199));

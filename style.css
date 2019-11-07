@@ -1,40 +1,69 @@
-/*
-Error: Invalid CSS after "...position-block"": expected selector or at-rule, was ".left a{"
-        on line 6 of sass/style.scss
+.container-fluid {
+  background-color: #d7e9ff; }
 
-1: @import "color";
-2: @import "font";
-3: @import "header";
-4: @import "position-block"
-5: 
-6: .left a{
-7:     @include a(rgb(0, 119, 199));
-8: }
+.main {
+  background-color: white; }
 
-Backtrace:
-sass/style.scss:6
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1278:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1208:in `expected'
-/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:42:in `parse'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:414:in `_to_tree'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `each'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:443:in `on_file_changed'
-/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:320:in `block in watch'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/var/lib/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...position-block\"\": expected selector or at-rule, was \".left a{\"\A         on line 6 of sass/style.scss\A \A 1: @import \"color\";\A 2: @import \"font\";\A 3: @import \"header\";\A 4: @import \"position-block\"\A 5: \A 6: .left a{\A 7:     @include a(rgb(0, 119, 199));\A 8: }"; }
+h5 {
+  font-weight: bold; }
+
+.card-title a {
+  text-decoration: none;
+  font-size: .7em;
+  font-weight: normal; }
+
+.logo_about {
+  color: lightslategrey; }
+
+header {
+  background-color: #0077c7;
+  color: white; }
+  header nav a {
+    width: 10%; }
+  header nav div ul li a {
+    text-decoration: none;
+    color: white; }
+
+main, nav {
+  width: 85%;
+  margin: auto; }
+
+.block {
+  margin: 1em 0; }
+
+main div div div div div div div:nth-child(1) a {
+  text-decoration: none;
+  color: black; }
+  main div div div div div div div:nth-child(1) a:hover {
+    color: green; }
+main div div div div div div div:nth-child(2) a {
+  text-decoration: none;
+  color: black; }
+  main div div div div div div div:nth-child(2) a:hover {
+    color: red; }
+
+.photo_dave {
+  color: pink;
+  font-size: 60px;
+  position: absolute;
+  top: 38%;
+  left: 43%; }
+
+.logo_about {
+  margin-right: 3rem; }
+
+.main {
+  margin-top: 1em;
+  border: 1px solid lightgray;
+  border-radius: 3px; }
+
+.input-group {
+  padding: 1.2rem;
+  border-bottom: 1px solid lightgray; }
+
+.left a {
+  color: #0077c7; }
+  .left a :hover {
+    color: #0077c7; }
+
+/*# sourceMappingURL=style.css.map */
